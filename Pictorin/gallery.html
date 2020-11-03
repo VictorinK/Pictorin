@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/curtain.css">
+    <style>
+        #logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  padding-right: 2rem;
+  z-index: 300;
+}
+
+/* line 178, D:/WEB/Projects/Slider/assets/scss/style.scss */
+#logo .logo-text {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* line 185, D:/WEB/Projects/Slider/assets/scss/style.scss */
+#logo:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #fff;
+}
+    </style>
+</head>
+<body>
+
+<div id="logo" >
+    <span class="logo-text masked ml-2 mb-1" onclick="openNav()" style="cursor:pointer;text-color:black">Pictorin</span>
+</div>
+
+
+<div id="slide">
+    <div class="container-fluid h-400 py-2 text-center overflow-auto" style="background-color: white; height:600px;scroll-direction: horizontal;">
+
+        <ul class="list-group list-group-horizontal border-0">
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=137-12lHzG2v4DK3KRn17bY5tM3z5FdIZ" alt="leo_lake"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=12vgFp33QSitzpKH3VFZjvjsSsEl_5jX4" alt="old_aparments"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=12zA4TJTMyKpMJnr1emTLBXwYZtu2lPQp" alt="christmas_flower"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19HBl4QEFW_ZIfWbGi7en3zaLv50nq3Q8" alt="christmas_flower_pt2"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1Ak9H1OcWl66fI1IWr8X_zni8ts3oFJad" alt="slu_lake_day"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19lmQv2HE3sFVVgTRy3gWWIgeyJlySQm4" alt="slu_lake_night"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1AiiW4APvIA5G57rwl2eG07eoe2W0Lte8" alt="chic_fila_drivethru"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1Af9v48lNhKpAOE3iXliVymez2O8qMPRO" alt="slu_pres_car"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1AewpqkF4fpA93tgbY289H7jqraq32WOh" alt="riverside_lights"></li>
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1AXxozCno5zkLbMhrAu-8I4XpKcqf_60H" alt="marmion_silhouette"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1AUmsHQCb86Y7-q1oPH9DaquoJdSOvQmV" alt="marmion_lake"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1AMn4uD-yS-jWORtaDwTMdrKt57X9xbTa" alt="marmion_lakept2"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1AMfIRVl7Lay6kHll8_Uzx18cQOptwIOq" alt="yellow_flower"></li>
+
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18pOnPxHw1uE8t2ji1uO3sxb1ONFWOsPn" alt="sunrail_bw"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18sbU-BF7SdQSrH6b3PAt_PXITYEuHrAr" alt="sunrail"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18wA8MX0zjz4DnfOYKlHw66llFHxH5Sdh" alt="duckpt1"></li>
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18vhmY7BFWqMn_AY8w7GF2tPxKCcVRBnq" alt="duckpt2"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19-d6ZuCIOb-INeHzG9RECefIK2-5baYy" alt="slu_church_back"></li>
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1920FZtjGyODFeN-lUtMYqqE0LQ7NyCNo" alt="mama_grasshopper"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1967CV5FjQj6qNExHsn2hgMJU5IlnfpeI" alt="fruit_cake"></li>
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19QJoJmY5vsNl45cXZHAYBcV41wI3K5T7" alt="bird_no_parking"></li>
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19Q_DvOJRvWyyedWUSFrejNbATguIy18y" alt="zen_gardem"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19f96SRmehR2bNGIVcz1hsSaERxmKkUaw" alt="slu_lunch_pathway"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19jG_mrNCFhU_c5jbEgGJjEskqE_4bd03" alt="heron"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19kLS-mXArwvJangV5lPgvPIK-NKTG33F" alt="keyboard"></li>
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19kPt74BP8yO2N1DBF6_SSCqUpmZPsCFv" alt="slu_church_side"></li>
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=19sXdITJZLrCJgxh-j6YetWqqQCzEfChx" alt="marmion_lake_high"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1ABjENj5YXlsXGe_S5756cUdx2NlJqFED" alt="stpete_beach_pt1"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1A1vjLZCSVhBxU-anPW23MHuR2K_BUET1" alt="stpete_beach_pt2"></li>
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1A2DrQ-H3TGFPGnn4s_xoDHkHKpoqc9HU" alt="stpete_beach_pt3"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=1AB1DGd-PsGYy9tJeK_RZUnh2mv8_7k43" alt="stpete_beach_pt4"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18nlWGHAYxSqA_DpkndzZ7xRCAuyme3E8" alt="barnett_lake"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18nHhkKl_sQRB_01E2LZ6pTuvIGUodvAS" alt="barnett_lake_bw"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18k0asVy5zqqjbHW0k024c1fS9Ia_aXNl" alt="barnett_palm_tree"></li>
+
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18j07EQH7LD6tF8QySRN_kcZV3nVPEVtf" alt="barnett_palm_tree"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18g9B31w_NY2AxecwVs2iSvli7AEBSSY4" alt="orlando_airport_sunset"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18YTeAfsQrofYxHb2YDRXBrBsC5ef-dO-" alt="orlando_airport_dock"></li>
+            <li class="list-group-item border-0"> <img src="https://drive.google.com/uc?export=view&id=18KglyII5xplfhFzIejlbWX-QaOiRXjNd" alt="orlando_airport_lake"></li>
+
+        </ul>
+    </div>
+</div>
+
+
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#">Hood-insight (coming soon)</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+<script src="animations.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</body>
+</html>

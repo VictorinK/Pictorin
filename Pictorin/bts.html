@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pictorin</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/curtain.css">
+    <style>
+    #contact-card svg {
+        font-size: 40px;
+    }
+
+    #jumbotron {
+         background: url('https://drive.google.com/uc?export=view&id=1AXxozCno5zkLbMhrAu-8I4XpKcqf_60H') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height:450px;
+    }
+    #logo {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      padding-right: 2rem;
+      z-index: 300;
+}
+
+/* line 178, D:/WEB/Projects/Slider/assets/scss/style.scss */
+#logo .logo-text {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* line 185, D:/WEB/Projects/Slider/assets/scss/style.scss */
+#logo:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #fff;
+}
+    </style>
+
+</head>
+<body>
+
+<div id="logo" >
+    <span class="logo-text masked ml-2 mb-1" onclick="openNav()" style="cursor:pointer;text-color:black">Pictorin</span>
+</div>
+
+<div id="jumbotron">
+    <div class="container-fluid pt-5 text-center">
+        <h1 class="text-white" style="margin-top:3em; font-size:63px;">Behind The Scene</h1>
+    </div>
+</div>
+
+<div id="video-section">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem; margin-bottom:1.5em;">
+                    <img class="card-img-top" src="https://i.ytimg.com/vi/_z2Q7KwajZQ/maxresdefault.jpg" alt="video_coming_soon">
+                    <div class="card-body ">
+                        <h5 class="card-title mt-3">Orlando Graffiti Movement pt.1</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem; margin-bottom:1.5em;">
+                    <img class="card-img-top" src="https://i.ytimg.com/vi/_z2Q7KwajZQ/maxresdefault.jpg" alt="video_coming_soon">
+                    <div class="card-body ">
+                        <h5 class="card-title mt-3">Downtown Orlando</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem; margin-bottom:1.5em;">
+                    <img class="card-img-top" src="https://i.ytimg.com/vi/_z2Q7KwajZQ/maxresdefault.jpg" alt="video_coming_soon">
+                    <div class="card-body ">
+                        <h5 class="card-title mt-3">Zoe Life</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Curtain menu-->
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#">Hood-insight (coming soon)</a>
+        <a href="bts.html">Behind The Scene</a>
+    </div>
+</div>
+
+<script src="animations.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</body>
+</html>
